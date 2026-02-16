@@ -1,0 +1,14 @@
+## **Archivo 2: `graphql-schema.md`**
+```md
+# Esquema GraphQL del Sistema
+
+## 1. Introducción
+Este documento define los tipos, queries y mutations del esquema GraphQL del sistema.
+
+## 2. Tipos Principales
+```graphql
+type User {
+  id: ID!
+  name: String!
+  email: String!
+}
