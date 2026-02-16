@@ -8,12 +8,14 @@ Este documento describe los endpoints REST del sistema, siguiendo las convencion
 - Productos
 - Órdenes
 
+---
+
 ## 3. Endpoints
 
 ### 3.1. Obtener lista de usuarios
 **Método:** GET  
-**URL:** /api/users  
-**Descripción:** Retorna la lista completa de usuarios registrados.  
+**URL:** `/api/users`  
+**Descripción:** Retorna la lista completa de usuarios registrados.
 
 **Ejemplo de respuesta:**
 ```json
