@@ -1,0 +1,20 @@
+# Diseño de Arquitectura del Sistema
+
+Este documento describe la estructura de alto nivel del sistema de gestión de tareas, basada en un patrón de microservicios para garantizar escalabilidad y mantenibilidad.
+
+## 1. Patrón de Arquitectura
+El sistema implementa una arquitectura de **Microservicios**, lo que permite el despliegue independiente de sus componentes.
+
+## 2. Diagrama de Componentes (Mermaid)
+
+A continuación, se representa el flujo de datos desde el cliente hasta la persistencia:
+
+```mermaid
+graph TD
+    A[Cliente / App] -->|HTTPS| B[1. API Gateway]
+    B -->|Routing| C[2. Task Service]
+    C -->|SQL Query| D[(3. Database PostgreSQL)]
+
+    style B fill:#f9f,stroke:#333,stroke-width:2px
+    style C fill:#bbf,stroke:#333,stroke-width:2px
+    style D fill:#dfd,stroke:#333,stroke-width:2px
